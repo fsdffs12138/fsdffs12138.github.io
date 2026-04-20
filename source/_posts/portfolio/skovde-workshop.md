@@ -3,7 +3,7 @@ title: "舍夫德大学游戏工坊｜4 人欺骗对战桌游"
 date: 2024-08-30 18:00:00
 categories:
   - 作品集
-  - 项目经历
+  - 桌游
 tags:
   - 桌游
   - 游戏设计
@@ -11,7 +11,7 @@ tags:
   - 博弈
   - 欺骗机制
 cover: /img/portfolio/BV1pJoeY7E5r.jpg
-description: 瑞典舍夫德大学组织的 15 天线下游戏创作工作坊，主导设计了一套 4 人欺骗对战桌游。
+description: 4 人欺骗对战桌游，通过交换或虚张声势凑出三张一样的牌型。
 sticky: 70
 ---
 

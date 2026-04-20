@@ -3,7 +3,7 @@ title: "《旅者归歌》｜2D 平台跳跃战斗 · 策划 + 程序"
 date: 2025-06-10 18:00:00
 categories:
   - 作品集
-  - 项目经历
+  - 中传期间作业
 tags:
   - Unity
   - 2D 平台跳跃
@@ -12,7 +12,7 @@ tags:
   - 开放世界
   - 中传毕设
 cover: /img/portfolio/BV1BfMgzwEZ9.jpg
-description: 2025 中国传媒大学游戏设计系联创毕设。一款包含 ACT、开放世界、肉鸽要素的 2D 平台跳跃战斗游戏。
+description: 一款融合 ACT、开放世界、肉鸽要素的 2D 平台跳跃战斗游戏。
 sticky: 100
 ---
 

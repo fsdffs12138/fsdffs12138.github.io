@@ -95,6 +95,11 @@ post_meta:
     tags: true
     label: true
 
+# 首页文章卡片摘要：method 2 = 优先取 front-matter 的 description，没有才截正文
+index_post_content:
+  method: 2
+  length: 100
+
 # ---------- Sidebar ----------
 # widget 顺序参考 hmxs.games：
 # author -> announcement -> recent-post -> categories -> tags -> archives -> webinfo

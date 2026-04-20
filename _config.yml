@@ -68,6 +68,9 @@ category_map:
   作品集: portfolio
   项目经历: projects
   工作经历: work
+  中传期间作业: cuc
+  GameJam: gamejam
+  桌游: tabletop
   图形技术: graphics
   渲染: rendering
 tag_map:

@@ -3,7 +3,7 @@ title: "《回那天》｜第一人称微恐解密 · 策划 + 程序"
 date: 2024-06-15 18:00:00
 categories:
   - 作品集
-  - 项目经历
+  - 中传期间作业
 tags:
   - Unity
   - 微恐
@@ -12,7 +12,7 @@ tags:
   - 对话系统
   - 机核 BOOOM
 cover: /img/portfolio/BV152EuzmEpj.jpg
-description: 第一人称微恐解密游戏。玩家扮演回家探亲的孙子，在老宅中逐步解开奶奶出事当年的秘密。入选机核 BOOOM 2025。
+description: 第一人称中式民俗微恐解密，回南天的老宅里拼回一年前奶奶出事那天的真相。
 sticky: 80
 ---
 

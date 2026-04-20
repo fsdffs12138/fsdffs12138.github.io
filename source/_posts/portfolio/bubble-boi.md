@@ -3,7 +3,7 @@ title: "《Bubble Boi》｜GGJ 2025 · 平台跳跃"
 date: 2025-01-19 18:00:00
 categories:
   - 作品集
-  - 项目经历
+  - GameJam
 tags:
   - Unity
   - 平台跳跃
@@ -11,7 +11,7 @@ tags:
   - Game Jam
   - 获奖作品
 cover: /img/portfolio/bubble-boi-cover.jpg
-description: 2025 Global Game Jam 48 小时创作作品，获得所在赛区最佳视觉奖。一款控制泡泡体型/体重来通关的特色平台跳跃游戏。
+description: 控制泡泡的体型 / 体重来抵达不同位置的特色平台跳跃游戏。
 sticky: 75
 ---
 
