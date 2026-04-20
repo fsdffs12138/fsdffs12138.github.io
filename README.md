@@ -79,7 +79,7 @@ mathjax: true          # 可选，需要数学公式时开启
 
 ### 首次部署步骤
 
-1. 在 GitHub 创建仓库，**仓库名建议 `arthursfeng.github.io`**（这样就是用户站，URL 最短）
+1. 在 GitHub 创建仓库，**仓库名建议 `<你的用户名>.github.io`**（这样就是用户站，URL 最短；当前仓库为 `fsdffs12138.github.io`）
 2. 本地初始化并推送：
    ```powershell
    cd h:\工作内容\Web
@@ -87,11 +87,11 @@ mathjax: true          # 可选，需要数学公式时开启
    git branch -M main
    git add .
    git commit -m "init: hexo + butterfly blog"
-   git remote add origin https://github.com/arthursfeng/arthursfeng.github.io.git
+   git remote add origin https://github.com/fsdffs12138/fsdffs12138.github.io.git
    git push -u origin main
    ```
 3. 打开 GitHub 仓库 → Settings → Pages → Source 选 **"GitHub Actions"**
-4. 等 Actions 跑完（约 1-2 分钟），访问 `https://arthursfeng.github.io`
+4. 等 Actions 跑完（约 1-2 分钟），访问 `https://fsdffs12138.github.io`
 
 ### 以后更新
 只要 `git push`，Actions 会自动重新构建并部署。

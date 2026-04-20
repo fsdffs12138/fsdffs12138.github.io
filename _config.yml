@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## GitHub Pages 用户站：如果仓库名是 <username>.github.io，则 url 就是 https://<username>.github.io
 ## 如果是项目站（仓库名不是上面那种），则 url 要加项目子路径：https://<username>.github.io/<repo>
-url: https://arthursfeng.github.io
+url: https://fsdffs12138.github.io
 permalink: posts/:year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,6 +101,6 @@ search:
 ## 一键 git 部署到 GitHub Pages
 deploy:
   type: git
-  repo: https://github.com/arthursfeng/arthursfeng.github.io.git
+  repo: https://github.com/fsdffs12138/fsdffs12138.github.io.git
   branch: main
   message: 'site update: {{ now("YYYY-MM-DD HH:mm:ss") }}'
