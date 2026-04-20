@@ -10,6 +10,7 @@ nav:
 # 菜单顺序参考 hmxs.games：主页 / 关于 / 分类 / 标签 / 归档 / 友链
 menu:
   主页: / || fas fa-home
+  工作经历: /categories/work/ || fas fa-briefcase
   作品集: /categories/portfolio/ || fas fa-gamepad
   关于: /about/ || fas fa-heart
   分类: /categories/ || fas fa-folder-open
