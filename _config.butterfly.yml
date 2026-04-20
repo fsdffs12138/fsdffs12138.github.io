@@ -40,10 +40,9 @@ highlight_height_limit: false
 code_word_wrap: false
 
 # ---------- Social ----------
-# avatar: 未配置，使用 Butterfly 默认头像（以后用户重发真正的头像再启用）
-# avatar:
-#   img: /img/avatar.jpg
-#   effect: false
+avatar:
+  img: /img/portfolio/Avatar.jpg
+  effect: false
 
 social:
   fab fa-github: https://github.com/fsdffs12138 || GitHub
