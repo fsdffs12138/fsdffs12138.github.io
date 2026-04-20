@@ -5,14 +5,29 @@
 nav:
   logo:
   display_title: true
-  fixed: false
+  fixed: true   # 导航栏吸顶，滚动时保持可见
 
+# 菜单顺序参考 hmxs.games：主页 / 关于 / 分类 / 标签 / 归档 / 友链
 menu:
-  首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
+  主页: / || fas fa-home
+  关于: /about/ || fas fa-heart
   分类: /categories/ || fas fa-folder-open
   标签: /tags/ || fas fa-tags
-  关于: /about/ || fas fa-heart
+  归档: /archives/ || fas fa-archive
+  友链: /link/ || fas fa-link
+
+# ---------- 首页站点信息（Banner 中央区）----------
+# 打字机效果的副标题（Typed.js）
+subtitle:
+  enable: true
+  effect: true        # 开启打字机效果
+  loop: true
+  source: false       # 不从外部一言 API 拉，使用 sub 列表
+  sub:
+    - "Weathering with games."
+    - "ゲームをしましょう！"
+    - "Graphics · Gameplay · Craft"
+    - "一个技术美术的思考留痕"
 
 # ---------- Code Blocks ----------
 highlight_theme: mac light
@@ -24,18 +39,19 @@ code_word_wrap: false
 
 # ---------- Social ----------
 social:
-  fab fa-github: https://github.com/arthursfeng || GitHub
-  # fas fa-envelope: mailto:your@email || Email
+  fab fa-github: https://github.com/fsdffs12138 || GitHub
+  fas fa-envelope: mailto:784536651@qq.com || Email
+  # fab fa-bilibili: https://space.bilibili.com/你的UID || Bilibili
 
 # ---------- Image (首页头图/封面)----------
-# 默认先用 Butterfly 自带的 default.png；后续你可以换成自己的图
-index_img:
-default_top_img:
+# index_img 留空时会使用 top_img；这里用本地 banner
+index_img: /img/index_banner.png
+default_top_img: /img/index_banner.png
 archive_img:
 tag_img:
 category_img:
 
-# 首页文章不显示封面图时使用的占位（设为 false 即不显示）
+# 首页封面图：不设置时用 default_cover（此处用默认）
 cover:
   index_enable: true
   aside_enable: true
@@ -74,6 +90,8 @@ post_meta:
     label: true
 
 # ---------- Sidebar ----------
+# widget 顺序参考 hmxs.games：
+# author -> announcement -> recent-post -> categories -> tags -> archives -> webinfo
 aside:
   enable: true
   hide: false
@@ -86,12 +104,12 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 图形 / 游戏 / 工具链的思考留痕
     button:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/arthursfeng
+      link: https://github.com/fsdffs12138
   card_announcement:
     enable: true
     content: 欢迎来到 arthurs 的小站 🎮 这里是图形、游戏与工具链的思考留痕。
@@ -108,7 +126,7 @@ aside:
   card_tags:
     enable: true
     limit: 40
-    color: false
+    color: true     # 彩色标签云（参考目标站）
     sort_order:
   card_archives:
     enable: true
@@ -128,6 +146,12 @@ local_search:
   enable: true
   preload: false
   CDN:
+
+# ---------- 顶部进度条（pace-js）----------
+pace:
+  enable: true
+  # theme options：minimal / center-simple / flash / center-atom / ...
+  theme: minimal
 
 # ---------- Footer ----------
 footer:
@@ -164,7 +188,7 @@ darkmode:
   start:
   end:
 
-# ---------- Reading progress / Back-to-top ----------
+# ---------- 右侧工具栏 ----------
 rightside_bottom: 0
 rightside:
   readmode: true
@@ -174,17 +198,17 @@ rightside:
 # waline / twikoo / gitalk 等，等你需要的时候再开
 
 # ---------- Mathjax / Katex ----------
-# 写图形/渲染笔记时可能用到公式，先不默认开，文章内单独开即可
 mathjax:
   enable: false
   per_page: false
 
-# ---------- 开启 Pjax（页面不刷新切换，提速浏览）----------
+# ---------- Pjax（页面不刷新切换）----------
 pjax:
   enable: true
   exclude:
 
-# ---------- CDN（默认 jsdelivr）----------
+# ---------- CDN ----------
 CDN:
   internal_provider: local
   third_party_provider: jsdelivr
+
