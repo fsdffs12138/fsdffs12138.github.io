@@ -40,9 +40,10 @@ highlight_height_limit: false
 code_word_wrap: false
 
 # ---------- Social ----------
-avatar:
-  img: /img/avatar.jpg
-  effect: false      # true 则头像会旋转
+# avatar: 未配置，使用 Butterfly 默认头像（以后用户重发真正的头像再启用）
+# avatar:
+#   img: /img/avatar.jpg
+#   effect: false
 
 social:
   fab fa-github: https://github.com/fsdffs12138 || GitHub
@@ -217,4 +218,34 @@ pjax:
 CDN:
   internal_provider: local
   third_party_provider: jsdelivr
+
+# ---------- Inject（注入自定义 HTML / CSS / JS）----------
+# 入场"拉幕"加载动画：参考 purpleditine.top
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/preloader.css">
+  bottom:
+    - >-
+      <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+          <div class="configure-border-1"><div class="configure-core"></div></div>
+          <div class="configure-border-2"><div class="configure-core"></div></div>
+          <div class="loading-word">loading...</div>
+        </div>
+      </div>
+      <script>
+      (function(){
+        var endLoading=function(){
+          document.body.style.overflow='auto';
+          var el=document.getElementById('loading-box');
+          if(el)el.classList.add('loaded');
+        };
+        if(document.readyState==='complete'){endLoading();}
+        else{window.addEventListener('load',endLoading);}
+        setTimeout(endLoading,3500);
+      })();
+      </script>
+
 

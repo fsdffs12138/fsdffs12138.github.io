@@ -12,6 +12,7 @@ tags:
   - 挖矿
   - 获奖作品
 description: 腾讯大发明家小游戏创作赛三等奖。英雄联盟同人题材，酒桶去冰原挖坚冰酿酒的资源管理游戏。
+cover: /img/portfolio/barrel-snow-cover.jpg
 sticky: 85
 ---
 
