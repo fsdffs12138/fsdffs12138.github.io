@@ -40,10 +40,14 @@ highlight_height_limit: false
 code_word_wrap: false
 
 # ---------- Social ----------
+avatar:
+  img: /img/avatar.jpg
+  effect: false      # true 则头像会旋转
+
 social:
   fab fa-github: https://github.com/fsdffs12138 || GitHub
+  fab fa-bilibili: https://space.bilibili.com/27962591 || Bilibili
   fas fa-envelope: mailto:784536651@qq.com || Email
-  # fab fa-bilibili: https://space.bilibili.com/你的UID || Bilibili
 
 # ---------- Image (首页头图/封面)----------
 # Banner 图（用户提供，已压缩至 0.55MB）
