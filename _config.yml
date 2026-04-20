@@ -1,0 +1,106 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Arthurs Wiki
+subtitle: '图形 · 游戏 · 技术美术随笔'
+description: '一个关于图形、游戏开发、工具链与学习笔记的个人站。'
+keywords: graphics, unity, unreal, tech-art, game-dev
+author: arthurs
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+## GitHub Pages 用户站：如果仓库名是 <username>.github.io，则 url 就是 https://<username>.github.io
+## 如果是项目站（仓库名不是上面那种），则 url 要加项目子路径：https://<username>.github.io/<repo>
+url: https://arthursfeng.github.io
+permalink: posts/:year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true   # 每篇文章自带同名资源文件夹，方便放图
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+meta_generator: true
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# Extensions
+theme: butterfly
+
+# 本地搜索数据（Butterfly 的 local_search 依赖）
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# 短链接（配合 permalink: posts/:abbrlink/）
+# 需要另装 hexo-abbrlink；本项目暂未启用，permalink 可改回 :year/:month/:day/:title/
+# 如你希望启用 abbrlink，告诉我我帮你装
+
+# Deployment
+## 一键 git 部署到 GitHub Pages
+deploy:
+  type: git
+  repo: https://github.com/arthursfeng/arthursfeng.github.io.git
+  branch: main
+  message: 'site update: {{ now("YYYY-MM-DD HH:mm:ss") }}'
