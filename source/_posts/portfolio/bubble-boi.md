@@ -10,7 +10,7 @@ tags:
   - GGJ
   - Game Jam
   - 获奖作品
-cover: /img/portfolio/BV1P8wreHEMx.jpg
+cover: /img/portfolio/bubble-boi-cover.jpg
 description: 2025 Global Game Jam 48 小时创作作品，获得所在赛区最佳视觉奖。一款控制泡泡体型/体重来通关的特色平台跳跃游戏。
 sticky: 75
 ---
