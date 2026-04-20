@@ -101,6 +101,58 @@ mathjax: true          # 可选，需要数学公式时开启
 npm run deploy    # 用 hexo-deployer-git 推到仓库
 ```
 
+## ✅ 发布审核流程（push 前自检清单）
+
+每次提交前按下面的顺序过一遍，能挡掉 90% 的线上事故。触发词：**发文 / 发布 / 部署 / 上线 / 推博客 / 提交审核**。
+
+### 1. 内容核对
+- [ ] front-matter 必填齐：`title` / `date` / `categories` / `tags` / `description`
+- [ ] 封面图路径存在（`cover: /img/...`），图片 < 1 MB（超过用 sharp 压一下）
+- [ ] 正文内部链接、图片链接全部有效（无 404）
+- [ ] 署名相关文案保持 `arthurs`（侧边栏、公告、about 页不要回退成 porcojiang）
+
+### 2. 配置核对（动过才查）
+- [ ] `_config.yml` 的 `timezone` **必须是 IANA 合法值**（中国统一 `Asia/Shanghai`，**不能写 Asia/Shenzhen**）
+- [ ] `url` = `https://fsdffs12138.github.io`，`deploy.repo` = 用户站仓库
+- [ ] `_config.butterfly.yml` 里的 `index_img` / `social` / `menu` 路径都存在
+
+### 3. 本地构建验证（必跑）
+```powershell
+npx.cmd hexo clean
+npx.cmd hexo generate     # 必须 0 error，有 WARN 看情况
+npx.cmd hexo server       # http://localhost:4000 肉眼确认首页 / 新文章 / 分类 / 标签
+```
+- [ ] 终端无报错（特别注意 `Moment Timezone has no data for ...`）
+- [ ] 浏览器首页、新发文章、分类页、标签页都能打开
+- [ ] 新文章封面、正文图片都正常加载（打开浏览器 DevTools 看 Network 有没有 404）
+
+### 4. Git 提交
+```powershell
+git status                           # 看看有没有误入的产物
+git add .
+git commit -m "<type>: <一句话说明>"   # type: post / style / fix / chore
+git push origin main
+```
+Commit message 约定：
+- `post: add XXX`（新文章）
+- `style: ...`（主题 / 样式）
+- `fix: ...`（bug / 配置错误）
+- `chore: ...`（杂项）
+
+### 5. 线上验证（push 之后 1–2 分钟）
+- [ ] GitHub Actions 跑绿（https://github.com/fsdffs12138/fsdffs12138.github.io/actions）
+- [ ] 打开 https://fsdffs12138.github.io/ 确认新内容已更新
+- [ ] 随机点一篇新文章，看封面、正文图片、分类标签都正常
+- [ ] 如果 404：**先本地 `hexo generate`** 复现，99% 是构建失败导致 Pages 无产物
+
+### 常见坑（过去踩过的）
+| 症状 | 根因 | 处理 |
+|---|---|---|
+| 线上 404 | `timezone` 填了非 IANA 值 | 改回 `Asia/Shanghai` 重推 |
+| 页面仍显示旧署名 | 浏览器缓存 + server 未重启 | `hexo clean && generate`，Ctrl+F5 硬刷 |
+| PowerShell 跑不了 `npm` | 执行策略拦 `npm.ps1` | 用 `npm.cmd` / `npx.cmd` |
+| banner 加载慢 | 图片过大 | 用 sharp 压成 JPEG Q82 w1920 |
+
 ## 🧩 常用写作技巧
 
 - **置顶**：front-matter 加 `sticky: 100`
