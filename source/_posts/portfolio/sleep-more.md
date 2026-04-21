@@ -15,6 +15,23 @@ description: 一款基于 One Button 主题的小 Game Jam 作品：赖床的打
 sticky: 60
 ---
 
+## 🕹️ 在线试玩
+
+<div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+  <iframe
+    src="https://itch.io/embed-upload/17252942?color=333333"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    scrolling="no"
+    frameborder="no"
+    allowfullscreen="true"
+    referrerpolicy="no-referrer">
+  </iframe>
+</div>
+
+> 🎮 也可以到 itch.io 全屏游玩：[fsdffs12138.itch.io/sleep-more](https://fsdffs12138.itch.io/sleep-more)
+>
+> 首次加载 Unity WebGL 资源约需 10–30 秒，请耐心等待。
+
 ## 项目简介
 
 《再睡一会儿》是一款围绕 **One Button（单键操作）** 主题制作的 **Game Jam 小品**，本质是一款**弹球游戏**。
@@ -48,8 +65,9 @@ sticky: 60
 
 ## 项目链接
 
+- 🎮 **在线试玩**：[fsdffs12138.itch.io/sleep-more](https://fsdffs12138.itch.io/sleep-more)
 - 📦 **仓库**：[github.com/fsdffs12138/One_Button](https://github.com/fsdffs12138/One_Button)
-- 🛠 **技术栈**：Unity / C#
+- 🛠 **技术栈**：Unity / C# · WebGL
 
 ## 项目信息
 
