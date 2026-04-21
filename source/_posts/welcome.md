@@ -1,5 +1,5 @@
 ---
-title: 欢迎来到 arthurs 的小站
+title: 欢迎来到 Arthurs 的空间
 date: 2026-04-20 10:00:00
 updated: 2026-04-20 10:00:00
 categories:
@@ -10,18 +10,18 @@ tags:
 cover: false
 top_img: false
 sticky: 100
-description: 一个新的博客起点，用来记录图形、游戏、英语学习与生活。
+description: 一个新的博客起点，用来记录游戏、学习与生活。
 ---
 
-# 👋 Hi, I'm arthurs
+# 👋 Hi, I'm Arthurs
 
 这是一个用 **Hexo + Butterfly** 搭建的静态博客，部署在 **GitHub Pages**。
 
 ## 这里会写些什么
 
+- 🧩 **游戏设计**：正在做的2d横屏高速ACT游戏的设计记录
 - 🎨 **图形 / 渲染**：Shader、PBR、实时渲染的思考与实现
 - 🎮 **引擎实践**：Unity、Unreal 的工程踩坑与经验沉淀
-- 🧩 **游戏设计**：正在做的竖屏单摇杆多角色战术小队游戏的设计记录
 - 🛠️ **工具链**：GameEditor、虚幻盒子等效率工具使用笔记
 - 📖 **英语学习**：日常积累的实用词汇与表达
 

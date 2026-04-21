@@ -7,12 +7,12 @@ aside: false
 
 # 关于我 / About
 
-你好，我是 **arthurs** 🎮
+你好，我是 **Arthurs** 🎮
 
-- 🎨 游戏设计师
+- 🎨 一名中传游戏系在读学生
 - 🛠️ 常用：Unity、Unreal Engine、GameEditor、虚幻盒子
-- 📚 兴趣：战斗系统、Gameplay实现、游戏引擎、图形学
-- 🎯 正在做：一款**严肃叙事高速ACT游戏**
+- 📚 兴趣：玩法设计，战斗系统、Gameplay实现、游戏引擎、图形学
+- 🎯 正在做：一款**高速ACT游戏** or 严肃打工中
 
 这里是我记录笔记、踩坑和碎片想法的地方。
 
@@ -20,5 +20,9 @@ aside: false
 
 ## 联系
 
-- GitHub: [@arthursfeng](https://github.com/arthursfeng)
+欢迎来找我聊聊游戏、技术，或者只是打个招呼 👋
+
+- 📧 **邮箱**：[784536651@qq.com](mailto:784536651@qq.com)
+- 🐙 **GitHub**：[@fsdffs12138](https://github.com/fsdffs12138)
+- 📺 **Bilibili**：[个人空间](https://space.bilibili.com/27962591)
 
