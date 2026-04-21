@@ -6,9 +6,7 @@ categories:
   - 中传期间作业
 tags:
   - Unity
-  - C#
   - LLM
-  - AI 对话
   - 海龟汤
   - 胡桃
 cover: /img/portfolio/aichat-cover.jpg
@@ -29,10 +27,10 @@ sticky: 65
 ## 项目链接
 
 - 📦 **仓库**：[github.com/fsdffs12138/AIChat](https://github.com/fsdffs12138/AIChat)
-- 🛠 **技术栈**：Unity / C# + 大语言模型 API
 
 ## 项目信息
 
 - 时间：2025.02（按 Git 仓库提交时间）
+- 类型：实验性 AI 对话 Demo
+- 引擎：Unity + 大语言模型 API
 - 角色：独立开发
-- 形态：实验性 Demo

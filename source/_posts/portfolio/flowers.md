@@ -9,8 +9,6 @@ tags:
   - Game Jam
   - 叙事
   - 治愈
-  - 2D
-  - 学生作品
 cover: /img/portfolio/flowers-cover.png
 description: Unity 2D 叙事向治愈小游戏：在限时照料中陪伴逐渐老去的奶奶，讲述一段关于亲情、陪伴与告别的温柔故事。
 sticky: 65
@@ -53,12 +51,11 @@ sticky: 65
 ## 项目链接
 
 - 📦 **仓库**：[github.com/fsdffs12138/Flowers](https://github.com/fsdffs12138/Flowers)
-- 🛠 **技术栈**：Unity / C# / Timeline
 
 ## 项目信息
 
 - 时间：2024.04（Game Jam 短周期作品）
 - 类型：2D 叙事向治愈游戏
-- 引擎：Unity
+- 引擎：Unity / Timeline
 - 角色：程序 + 玩法设计
 - 团队：学生小组项目

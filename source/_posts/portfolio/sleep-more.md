@@ -9,7 +9,6 @@ tags:
   - Game Jam
   - One Button
   - 弹球
-  - 学生作品
 cover: /img/portfolio/sleep-more-cover.png
 description: 一款基于 One Button 主题的小 Game Jam 作品：赖床的打工人在通勤路上被"弹"着去上班。
 sticky: 60
@@ -67,12 +66,12 @@ sticky: 60
 
 - 🎮 **在线试玩**：[fsdffs12138.itch.io/sleep-more](https://fsdffs12138.itch.io/sleep-more)
 - 📦 **仓库**：[github.com/fsdffs12138/One_Button](https://github.com/fsdffs12138/One_Button)
-- 🛠 **技术栈**：Unity / C# · WebGL
 
 ## 项目信息
 
 - 时间：2024.03（Game Jam 短周期作品）
 - 主题：One Button（单键操作）
-- 引擎：Unity
+- 类型：弹球小品
+- 引擎：Unity（WebGL）
 - 角色：策划 + 程序
 - 团队：学生小组项目

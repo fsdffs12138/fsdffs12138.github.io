@@ -7,7 +7,6 @@ categories:
 tags:
   - Unity
   - 平台跳跃
-  - GGJ
   - Game Jam
   - 获奖作品
 cover: /img/portfolio/bubble-boi-cover.jpg
@@ -42,4 +41,7 @@ sticky: 75
 
 - 时间：2025.01.17 – 2025.01.19（48 小时 Game Jam）
 - 赛事：Global Game Jam 2025
+- 类型：特色平台跳跃
+- 引擎：Unity
 - 团队：学生小组
+- 成果：GGJ 所在赛区最佳视觉奖

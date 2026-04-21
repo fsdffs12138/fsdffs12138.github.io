@@ -8,9 +8,7 @@ tags:
   - Unity
   - 心理悬疑
   - 第一人称
-  - 噩梦
   - 中传毕设
-  - iOS
 cover: /img/portfolio/BV1PVMAzDEAL.jpg
 description: 扮演一名失意私家侦探，在噩梦迷宫中被蓝眼乌鸦指引，拼出记忆与真相。
 sticky: 95
@@ -44,4 +42,7 @@ sticky: 95
 ## 项目信息
 
 - 时间：2025.03 – 2025.06（中国传媒大学游戏设计系联创毕设）
+- 类型：第一人称心理悬疑
+- 引擎：Unity
 - 平台：iOS
+- 团队：学生联创小组
