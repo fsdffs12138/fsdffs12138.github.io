@@ -1,0 +1,136 @@
+/* ===========================================================
+ * anime.js 视觉效果集中样式
+ *   - scroll-reveal：卡片滚动入场
+ *   - svg-draw：首页 banner 手绘分隔符
+ *   - portfolio-filter：作品集分类页标签筛选条
+ * =========================================================== */
+
+/* ---------- scroll reveal（初始隐藏，防闪） ---------- */
+.recent-post-item,
+.article-sort-item:not(.year),
+.aside-content .card-widget {
+  /* will-change 放这里，触发 composite 层，滑动更顺 */
+  will-change: transform, opacity;
+}
+
+.sr-hidden {
+  opacity: 0 !important;
+  transform: translateY(30px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sr-hidden {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------- svg-draw：banner 下的手绘分隔曲线 ---------- */
+.sd-flourish-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem auto 0.4rem;
+  pointer-events: none;
+}
+
+.sd-flourish {
+  width: min(320px, 60%);
+  height: auto;
+  color: var(--btn-color, #fff);
+  opacity: 0.85;
+  overflow: visible;
+}
+
+.sd-flourish .sd-dot {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+/* 兜底：脚本没跑时（4 秒后），让曲线直接显示完整 */
+.sd-flourish:not(.sd-ready) .sd-path {
+  animation: sdFallback 0.4s ease 4s forwards;
+}
+
+@keyframes sdFallback {
+  to { opacity: 1; }
+}
+
+/* ---------- portfolio filter：标签筛选条 ---------- */
+.pf-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0.3rem 0;
+}
+
+.pf-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.4em 0.9em;
+  font-size: 0.88em;
+  line-height: 1.3;
+  color: var(--font-color, #4c4948);
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--light-grey, #eee);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.pf-chip:hover {
+  border-color: var(--theme-color, #A8B5A0);
+  color: var(--theme-color, #A8B5A0);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.pf-chip.pf-active {
+  background: var(--theme-color, #A8B5A0);
+  border-color: var(--theme-color, #A8B5A0);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(168, 181, 160, 0.35);
+}
+
+.pf-chip.pf-active:hover {
+  color: #fff;
+}
+
+.pf-chip .pf-count {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0 0.45em;
+  font-size: 0.78em;
+  line-height: 1.5;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+}
+
+.pf-chip.pf-active .pf-count {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* FLIP 动画期间，元素可能用到 transform，确保不被其它规则干扰 */
+#category .article-sort-item {
+  will-change: transform, opacity;
+}
+
+/* 黑暗模式配色 */
+[data-theme='dark'] .pf-chip {
+  color: var(--font-color, #ccc);
+  background: var(--card-bg, #2c2c2c);
+  border-color: #3d3d3d;
+}
+
+[data-theme='dark'] .pf-chip .pf-count {
+  background: rgba(255, 255, 255, 0.08);
+}

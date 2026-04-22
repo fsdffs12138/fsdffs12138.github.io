@@ -1,0 +1,45 @@
+/* 标题逐字入场动画 —— 初始隐藏，避免动画加载前的"闪一下原文再消失" */
+
+#page-header #site-title,
+#post-info .post-title {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#page-header #site-title.ta-ready,
+#post-info .post-title.ta-ready {
+  opacity: 1;
+}
+
+/* 每个字符的容器：inline-block 才能做 transform；will-change 提速 */
+.ta-char {
+  display: inline-block;
+  opacity: 0;
+  will-change: transform, opacity;
+  transform-origin: 50% 100%;
+  /* 防止 transform 出现的字符被父容器裁掉 */
+  padding-bottom: 0.05em;
+}
+
+/* 兜底：万一脚本挂了（4 秒后），强制显示 */
+@keyframes taFallbackShow {
+  to { opacity: 1; }
+}
+
+#page-header #site-title:not(.ta-ready),
+#post-info .post-title:not(.ta-ready) {
+  animation: taFallbackShow 0.3s ease 4s forwards;
+}
+
+/* 无障碍：用户偏好减少动画时直接显示 */
+@media (prefers-reduced-motion: reduce) {
+  #page-header #site-title,
+  #post-info .post-title {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  .ta-char {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

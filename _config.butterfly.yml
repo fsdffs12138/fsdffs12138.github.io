@@ -228,6 +228,8 @@ CDN:
 inject:
   head:
     - <link rel="stylesheet" href="/css/preloader.css">
+    - <link rel="stylesheet" href="/css/title-animate.css">
+    - <link rel="stylesheet" href="/css/anime-effects.css">
   bottom:
     - >-
       <div id="loading-box">
@@ -251,5 +253,9 @@ inject:
         setTimeout(endLoading,3500);
       })();
       </script>
+    - <script src="/js/title-animate.js" defer></script>
+    - <script src="/js/scroll-reveal.js" defer></script>
+    - <script src="/js/svg-draw.js" defer></script>
+    - <script src="/js/portfolio-filter.js" defer></script>
 
 
