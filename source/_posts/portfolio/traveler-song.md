@@ -1,5 +1,5 @@
 ---
-title: "《旅者归歌》｜2D 平台跳跃战斗 · 策划 + 程序"
+title: "《旅者归歌》｜2D 类银"
 date: 2025-06-10 18:00:00
 categories:
   - 作品集
@@ -12,7 +12,7 @@ tags:
   - 开放世界
   - 中传毕设
 cover: /img/portfolio/BV1BfMgzwEZ9.jpg
-description: 一款融合 ACT、开放世界、肉鸽要素的 2D 平台跳跃战斗游戏。
+description: 一款融合 ACT、开放世界、肉鸽要素的 2D 类银游戏。
 sticky: 100
 ---
 
